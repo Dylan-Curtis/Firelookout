@@ -1,9 +1,9 @@
-import { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { UserContext } from "../App";
 import ProfileUserIcon from "./ProfileUserIcon"
 
 function UserCard({handleEditToggle}) {
-    const { user, setUser } = useContext(UserContext);
+    const { user } = useContext(UserContext);
 
     
     return (
